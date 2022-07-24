@@ -1,6 +1,6 @@
 // Need to create a random number generator function that rounds down (done)
 // Need to remove the lowest number and add the three highest together. (done)
-// Need to populate the HTML text boxes with seaparate random numbers
+// Need to populate the HTML text boxes with seaparate random numbers (done)
 // Should also check to see if the text box already has a number inside it before randomizing
 
 const strength = document.getElementById('str');
@@ -32,6 +32,7 @@ const randomAvg = () => {
     return addDie();
 };
 
+// when clicking the randombutton it sends calls the randomAvg() function and uses the .value to send it to the proper text box in html.
 randomBtn.onclick = () => {
     strength.value = randomAvg();
     dexterity.value = randomAvg();
