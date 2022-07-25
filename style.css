@@ -1,15 +1,30 @@
+body {
+    background-color: rgb(43, 142, 222);
+    background-image: url(/img/wall.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h2 {
+    text-align: center;
+    padding: 25px;
+}
+
 .sheet-container {
-    height: 100%;
-    border: 1px solid;
+    height: auto;
+    margin: 50px;
+    background-image: url(/img/parchment.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .stat-box {
     width: 100px;
-    height: 160px;
-    border: 2px solid;
+    height: 160px;    
     border-radius: 5px;
     text-align: center;
     margin: 10px;
+    background-color: rgba(255, 255, 255, 0.609);
 }
 
 .num-box {
@@ -22,10 +37,11 @@
 }
 
 .stats-container {
-    border: 1px solid;
     width: 125px;
     height: 1150px;
     margin-left: 10px;
+    margin-bottom: 10px;
+    
 }
 
 .button {
