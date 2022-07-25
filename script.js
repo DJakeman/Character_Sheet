@@ -1,7 +1,8 @@
 // Need to create a random number generator function that rounds down (done)
 // Need to remove the lowest number and add the three highest together. (done)
 // Need to populate the HTML text boxes with seaparate random numbers (done)
-// Should also check to see if the text box already has a number inside it before randomizing
+// Should also check to see if the text box already has a number inside it before randomizing (possible need)
+//Need a function to calculate the modifier based on the random generated stat.
 
 const strength = document.getElementById('str');
 const dexterity = document.getElementById('dex');
@@ -11,36 +12,10 @@ const wisdom = document.getElementById('wis');
 const charisma = document.getElementById('cha');
 const randomBtn = document.getElementById('button');
 
-// simulates the random 6 sided die, could use * 20 for the 20 sided die but going by the bok rules on this one
-const randomNum = () => {
-    return Math.floor(Math.random() * 6)+ 1;
-};
-//Simulates the 4 6-sided die that you roll and then add together based on book rules. 
-const randomAvg = () => {
-    const die1 = randomNum();
-    const die2 = randomNum();
-    const die3 = randomNum();
-    const die4 = randomNum();
-
-    const array = [die1, die2, die3, die4]
-    const result = array.sort().filter((_,i) => i);
-    
-    const addDie = () => {
-        const sum = result.reduce((partialSum, a) => partialSum + a, 0);
-        return sum;
-    };
-    return addDie();
-};
-
-// when clicking the randombutton it sends calls the randomAvg() function and uses the .value to send it to the proper text box in html.
-randomBtn.onclick = () => {
-    strength.value = randomAvg();
-    dexterity.value = randomAvg();
-    constitution.value = randomAvg();
-    intelligence.value = randomAvg();
-    wisdom.value = randomAvg();
-    charisma.value = randomAvg();   
-};
-
-
-console.log(randomAvg());
+const modStr = document.getElementById('str-mod');
+const modDex = document.getElementById('dex-mod');
+const modCon = document.getElementById('con-mod');
+const modInt = document.getElementById('int-mod');
+const modWis = document.getElementById('wis-mod');
+const modCha = document.getElementById('cha-mod');
+const modBtn = document.getElementById('button2');
