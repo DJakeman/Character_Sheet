@@ -19,6 +19,46 @@ const randomAvg = () => {
     return addDie();
 };
 
+// IF/Else...if Function to calculate the modifier 
+
+const modifier = (ability, mod) => {
+    if (ability === '1') {
+        mod.value = -5;
+    } else if (ability >= '2' && ability <= '3') {
+        mod.value = -4;
+    } else if (ability >= '4' && ability <= '5') {
+        mod.value = -3;
+    } else if (ability >= '6' && ability <= '7') {
+        mod.value = -2;
+    } else if (ability >= '8' && ability <= '9') {
+        mod.value = -1;
+    } else if (ability >= '10' && ability <= '11') {
+        mod.value = 0;
+    } else if (ability >= '12' && ability <= '13') {
+        mod.value = 1;
+    } else if (ability >= '14' && ability <= '15') {
+        mod.value = 2;
+    } else if (ability >= '16' && ability <= '17') {
+        mod.value = 3;
+    } else if (ability >= '18' && ability <= '19') {
+        mod.value = 4;
+    } else if (ability >= '20' && ability <= '21') {
+        mod.value = 5;
+    } else if (ability >= '22' && ability <= '23') {
+        mod.value = 6;
+    } else if (ability >= '24' && ability <= '25') {
+        mod.value = 7;
+    } else if (ability >= '26' && ability <= '27') {
+        mod.value = 8;
+    } else if (ability >= '28' && ability <= '29') {
+        mod.value = 9;
+    } else if (ability === '30') {
+        mod.value = 10;
+    } else {
+        console.log('does not work');
+    }
+};
+
 // when clicking the randombutton it sends calls the randomAvg() function and uses the .value to send it to the proper text box in html.
 randomBtn.onclick = () => {
     strength.value = randomAvg();
@@ -29,19 +69,21 @@ randomBtn.onclick = () => {
     charisma.value = randomAvg();
     
     // call the modifier if else function to use the data above to calculate the modifier 
-    console.log(modifier(strength.value)); // this works... need to finish the if/else...if function to calculate the modified values now.
+    // this works... need to finish the if/else...if function to calculate the modified values now.
+    modifier(strength.value, modStr);
+    modifier(dexterity.value, modDex);
+    modifier(constitution.value, modCon);
+    modifier(intelligence.value, modInt);
+    modifier(wisdom.value, modWis);
+    modifier(charisma.value, modCha);
 };
 
-// IF/Else...if Function to calculate the modifier 
-
-const modifier = (mod) => {
-    if (mod === '1') {
-        return 'This Works';
-    } else {
-        return 'Does not work';
-    }
-};
-
+// Allows user to calculate their modifier from manually typed ability scores.
 modBtn.onclick = () => {
-    console.log(modifier(strength));
+    modifier(strength.value, modStr);
+    modifier(dexterity.value, modDex);
+    modifier(constitution.value, modCon);
+    modifier(intelligence.value, modInt);
+    modifier(wisdom.value, modWis);
+    modifier(charisma.value, modCha);
 };
