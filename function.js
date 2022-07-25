@@ -24,33 +24,33 @@ const randomAvg = () => {
 const modifier = (ability, mod) => {
     if (ability === '1') {
         mod.value = -5;
-    } else if (ability >= '2' && ability <= '3') {
+    } else if (ability === '2' || ability === '3') {
         mod.value = -4;
-    } else if (ability >= '4' && ability <= '5') {
+    } else if (ability === '4' || ability === '5') {
         mod.value = -3;
-    } else if (ability >= '6' && ability <= '7') {
+    } else if (ability === '6' || ability === '7') {
         mod.value = -2;
-    } else if (ability >= '8' && ability <= '9') {
+    } else if (ability === '8' || ability === '9') {
         mod.value = -1;
-    } else if (ability >= '10' && ability <= '11') {
+    } else if (ability === '10' || ability === '11') {
         mod.value = 0;
-    } else if (ability >= '12' && ability <= '13') {
+    } else if (ability === '12' || ability === '13') {
         mod.value = 1;
-    } else if (ability >= '14' && ability <= '15') {
+    } else if (ability === '14' || ability === '15') {
         mod.value = 2;
-    } else if (ability >= '16' && ability <= '17') {
+    } else if (ability === '16' || ability === '17') {
         mod.value = 3;
-    } else if (ability >= '18' && ability <= '19') {
+    } else if (ability === '18' || ability === '19') {
         mod.value = 4;
-    } else if (ability >= '20' && ability <= '21') {
+    } else if (ability === '20' || ability === '21') {
         mod.value = 5;
-    } else if (ability >= '22' && ability <= '23') {
+    } else if (ability === '22' || ability === '23') {
         mod.value = 6;
-    } else if (ability >= '24' && ability <= '25') {
+    } else if (ability === '24' || ability === '25') {
         mod.value = 7;
-    } else if (ability >= '26' && ability <= '27') {
+    } else if (ability === '26' || ability === '27') {
         mod.value = 8;
-    } else if (ability >= '28' && ability <= '29') {
+    } else if (ability === '28' || ability === '29') {
         mod.value = 9;
     } else if (ability === '30') {
         mod.value = 10;
