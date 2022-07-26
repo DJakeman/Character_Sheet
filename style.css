@@ -1,6 +1,6 @@
 body {
     background-color: rgb(43, 142, 222);
-    background-image: url(/img/wall.jpg);
+    background-image: url(./img/wall.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -64,7 +64,7 @@ h2 {
 #sheet-container {
     height: auto;
     margin: 50px;
-    background-image: url(/img/parchment.jpg);
+    background-image: url(./img/parchment.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
