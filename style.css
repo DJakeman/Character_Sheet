@@ -10,14 +10,6 @@ h2 {
     padding: 25px;
 }
 
-.sheet-container {
-    height: auto;
-    margin: 50px;
-    background-image: url(/img/parchment.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
 .stat-box {
     width: 100px;
     height: 160px;    
@@ -36,13 +28,7 @@ h2 {
     border-radius: 10px; 
 }
 
-.stats-container {
-    width: 125px;
-    height: 1150px;
-    margin-left: 10px;
-    margin-bottom: 10px;
-    
-}
+
 
 .button {
     position: relative;
@@ -75,7 +61,69 @@ h2 {
     margin-bottom: 2px;
 }
 
+#sheet-container {
+    height: auto;
+    margin: 50px;
+    background-image: url(/img/parchment.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#ability-container {
+    width: 125px;
+    height: 1150px;
+    margin-left: 10px;
+    margin-bottom: 10px; 
+}
+
 #mod {
     font-size: 14px;
     text-align: center;
+}
+
+/*Grid Container*/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 3, .5fr, .5fr;
+    
+}
+
+.header {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 75px;
+    grid-row: 1;
+    height: 125px;
+    width: auto;
+    margin: 15px;
+}
+
+#head {
+    grid-row: 1;
+    grid-column: span 3;
+}
+
+#head-name {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#head-class {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#head-race {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+#head-name, #head-class, #head-race {
+    background-color: rgba(252, 252, 252, 0.53);
+    height: 22px;
+    width:42px;
+    margin-top: 5px;
+    margin-left: 5px;
+    border-radius: 3px;
 }
