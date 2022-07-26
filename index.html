@@ -10,11 +10,35 @@
 </head>
 <body>
     <div class="header-container">
-        <h2>Dungeons and Dragons</h2>
         <div class="header">
-        <p id="name" class="header-input">Name:<input type="text"></p>
-        <p id="race" class="header-input">Race:<input type="text"></p>
-        <p id="class" class="header-input">Class:<input type="text"></p>
+            <h2>Character Sheet</h2>
+        </div>
+        <div class="header-labels">
+            <div class="header-nest">
+                <p id="name" class="header-input">
+                    Name:<input id="input-name" class="text-input" type="text">
+                </p>
+                <p id="race" class="header-input">
+                    Race:<input id="input-race" class="text-input" type="text">
+                </p>
+                <p id="class" class="header-input">
+                    Class:<input id="input-class" class="text-input" type="text">
+                </p>
+                <p id="level" class="header-input">
+                    Level:<input id="input-level" class="text-input" type="text">
+                </p>
+            </div>
+            <div class="header-nest">
+                <p id="background" class="header-input">
+                    Background:<input id="input-background" class="text-input" type="text">
+                </p>
+                <p id="Alignment" class="header-input">
+                    Alignment:<input id="input-alignment" class="text-input" type="text">
+                </p>
+                <p id="experience" class="header-input">
+                    Experience:<input  id="input-experience" class="text-input" type="text">
+                </p>
+            </div>
         </div>
     </div>
 <div class="main">
@@ -147,9 +171,42 @@
         </div>    
     </div>
 </div>
-<div class="container-2">
-    <h2>Skills</h2>
+<div class="container-2">   
+    <div class="armor-container">
+        <h2>Armor</h2>
+        <div class="armor-nest">
+            <div class="armor-class">
+                <input id="armor-class" class="num-box" type="text"><p>Armor Class</p>
+            </div>
+            <div id="initiative" class="initiative">
+                <input class="num-box" type="text">
+                 <p >Initiative</p>
+            </div>
+            <div class="speed">
+                <input class="num-box" type="text">
+                <p>Speed</p>
+            </div>
+        </div>
+        <div class="health-container">
+            <h2>Hit Points</h2>
+            <div class="health-nest">
+                <div class="max-health">
+                    <input class="num-box" type="text"> <p>Max-Health</p>
+                </div>
+                <div class="current-hp">
+                    <input type="text" class="num-box">
+                    <p>Current HP</p>
+                </div>
+                <div class="temp-hp">
+                    <input type="text" class="num-box">
+                    <p>Temporary HP</p>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="skills-container">
+        <h2>Skills</h2>
+        <div class="skills-container-nest">
         <div class="skills">
         <input type="checkbox"> <input class="skill-box" type="text"> Acrobatics (Dex)
         </div>
@@ -203,6 +260,7 @@
         </div>
         <div class="skills">
         <input type="checkbox"> <input class="skill-box" type="text"> Survival (wis)
+        </div>
         </div>
     </div>
 </div>

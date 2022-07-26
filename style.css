@@ -34,22 +34,65 @@ h2 {
     border: 1px solid;
 }
 
+.header {
+    height: 3rem;
+    padding-bottom: 1rem;
+}
+
+@media (max-width: 600px) {
+    .header {min-height: 5rem};
+}
+
 .header-input {
     background-color: #dbe3cc7b;
     border-radius: 1rem;
-    height: 0.5rem;
+    height: 0.7rem;
 }
 
-.header {
+.header-labels {
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: row;
     gap: 1rem;
     padding: 1rem;
     margin: 1rem;
     justify-content: center;
     border: 1px solid;
+    width: 25rem;
 }
 
+.text-input {
+    width: 6rem;
+}
+
+/*header-nest*/
+
+#input-name {
+    margin-left: 0.2rem;
+}
+
+#input-race {
+    margin-left: 0.6rem;
+}
+
+#input-class {
+    margin-left: 0.44rem;
+}
+
+#input-level {
+    margin-left: 0.35rem;
+}
+
+#input-background {
+    margin-left: 0.2rem;
+}
+
+#input-alignment {
+    margin-left: 0.8rem;
+}
+
+#input-experience {
+    margin-left: 0.6rem;
+}
 
 /*Container-1 Section*/
 
@@ -94,11 +137,11 @@ h2 {
 }
 
 .num-box {
-    height: 2rem;
-    width: 2rem;
+    height: 3rem;
+    width: 3rem;
     font-size: 24px;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 30px;
 }
 
 .ability-type {
@@ -123,7 +166,7 @@ h2 {
     flex-flow: column wrap; 
     justify-content: center;
     border: 1px solid;
-    height: 28rem;
+    height: 100%;
     width: 24rem;
     margin: 0.5rem 1rem;
 }
@@ -159,7 +202,39 @@ h2 {
     width: 26rem;
 }
 
+/*armor nest*/
+
+.armor-nest {
+    display: flex;
+    flex-flow: row wrap;
+    border: 1px solid;
+    height: 100%;
+}
+
+.armor-class, .initiative, .speed, .max-health, .current-hp, .temp-hp {
+    border: 1px solid;
+    width: 4rem;
+    padding: 1rem;
+    margin: 1rem;
+    height: 7rem;
+    text-align: center;
+    border-radius: 0.5rem 0.5rem 3rem 3rem;
+    background-color: #BDDA83;
+}
+
+.health-nest {
+    display: flex;
+    flex-flow: row wrap;
+    border: 1px solid;
+    height: 100%;
+}
+
+/*Skills Nest*/
 .skills-container {
+    border: 1px solid;
+}
+
+.skills-container-nest {
     border: 1px solid;
     padding: 1rem 3rem;
 }
