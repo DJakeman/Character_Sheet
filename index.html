@@ -4,23 +4,29 @@
     <title>Character Sheet</title>
     <link href="./style.css" rel="stylesheet" type="text/css">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
 </head>
 <body>
-<div>
-    <h2>Dungeons and Dragons</h2>
-    <div class="header" id="header-container">
+    <div class="header-container">
+        <h2>Dungeons and Dragons</h2>
+        <div class="header">
         <p id="name" class="header-input">Name:<input type="text"></p>
         <p id="race" class="header-input">Race:<input type="text"></p>
         <p id="class" class="header-input">Class:<input type="text"></p>
+        </div>
     </div>
-</div>
-<div class="ability-flex">
-    <div id="ability-container" class="container">
-        <div class="stat-box" id="strength">
-            <form>
-                <p class="ability-type">STR</p>
-                <input class="num-box" id="str" type="text" >
-            </form>
+<div class="main">
+<div class="container-1">
+    <div class="ability-flex">
+        <h2>Ability Scores</h2>
+        <div class="ability-container">
+            <div class="stat-box" id="strength">
+                <form>
+                    <p class="ability-type">STR</p>
+                    <input class="num-box" id="str" type="text" >
+                </form>
             <div id="mod">
                 <form>
                     <p class="mod-word">Mod</p>
@@ -88,15 +94,118 @@
                 </form>
             </div>
         </div>
-    </div>
-    <div class="btn-container">
-        <div class="button" id="button">
-            Random  
         </div>
-        <div class="button" id="button2">
-            Mod
+        <div class="btn-container">
+            <div class="button" id="button">
+                Random  
+            </div>
+            <div class="button" id="button2">
+                Mod
+            </div>
         </div>
     </div>
+    <div class="saving-throws-container">
+            <div class="proficiency">
+                <h2>Proficiency</h2>
+                <input class="num-box" type="text">
+            </div>               
+    
+            <div>
+              <h2>Saving Throws</h2>
+            </div>  
+        <div class="ability-container">          
+            <div id="throw-str" class="throw">
+                <input id="str-check" type="checkbox">
+                <p class="ability-type">STR</p>
+                <input class="saving-text" type="text">
+            </div>
+            <div id="throw-dex" class="throw">
+                <input id="dex-check" type="checkbox">
+                <p class="ability-type">DEX</p>
+                <input class="saving-text" type="text">
+            </div>
+            <div id="throw-con" class="throw">
+                <input id="con-check" type="checkbox">
+                <p class="ability-type">CON</p>
+                <input class="saving-text" type="text">
+            </div>
+            <div id="throw-int" class="throw">
+                <input id="int-check" type="checkbox">
+                <p class="ability-type">INT</p>
+                <input class="saving-text" type="text">
+            </div>
+            <div id="throw-wis" class="throw">
+                <input id="wis-check" type="checkbox">
+                <p class="ability-type">WIS</p>
+                <input class="saving-text" type="text">
+            </div>
+            <div id="throw-cha" class="throw">
+                <input id="cha-check" type="checkbox">
+                <p class="ability-type">CHA</p>
+                <input class="saving-text" type="text">
+            </div>
+        </div>    
+    </div>
+</div>
+<div class="container-2">
+    <h2>Skills</h2>
+    <div class="skills-container">
+        <div class="skills">
+        <input type="checkbox"> <input class="skill-box" type="text"> Acrobatics (Dex)
+        </div>
+        <div class="skills">
+        <input type="checkbox"> <input class="skill-box" type="text"> Animal Handling (Wis)
+        </div>
+        <div class="skills">
+        <input type="checkbox"> <input class="skill-box" type="text"> Arcana (Int)
+        </div>
+        <div class="skills">
+        <input type="checkbox"> <input class="skill-box" type="text"> Athletics (Str)
+        </div>
+        <div class="skills">
+        <input type="checkbox"> <input class="skill-box" type="text"> Deception (Cha)
+        </div>
+        <div class="skills">
+        <input type="checkbox"> <input class="skill-box" type="text"> History (Int)
+        </div>
+        <div class="skills">
+        <input type="checkbox"> <input class="skill-box" type="text"> Insight (Wis)
+        </div>
+        <div class="skills">
+        <input type="checkbox"> <input class="skill-box" type="text"> Intimidation (Cha)
+        </div>
+        <div class="skills">
+        <input type="checkbox"> <input class="skill-box" type="text"> Investigation (Int)
+        </div>
+        <div class="skills">
+        <input type="checkbox"> <input class="skill-box" type="text"> Medicine (Wis)
+        </div>
+        <div class="skills">
+        <input type="checkbox"> <input class="skill-box" type="text"> Nature (Int)
+        </div>
+        <div class="skills">
+        <input type="checkbox"> <input class="skill-box" type="text"> Perception (Wis)
+        </div>
+        <div class="skills">
+        <input type="checkbox"> <input class="skill-box" type="text"> Performance (Cha)
+        </div>
+        <div class="skills">
+        <input type="checkbox"> <input class="skill-box" type="text"> Persuasion (Cha)
+        </div>
+        <div class="skills">
+        <input type="checkbox"> <input class="skill-box" type="text"> Religion (Int)
+        </div>
+        <div class="skills">
+        <input type="checkbox"> <input class="skill-box" type="text"> Sleight of Hand (Dex)
+        </div>
+        <div class="skills">
+        <input type="checkbox"> <input class="skill-box" type="text"> Stealth (Dex)
+        </div>
+        <div class="skills">
+        <input type="checkbox"> <input class="skill-box" type="text"> Survival (wis)
+        </div>
+    </div>
+</div>
 </div>
     <script type="text/javascript" src="script.js"></script>
     <script type="text/javascript" src="function.js"></script>
