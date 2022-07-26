@@ -6,92 +6,89 @@
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
 </head>
 <body>
-<div id="sheet-container" class="grid-container">
-    <div class="header">
-        <h2 id="head">Dungeons & Dragons</h2>
-        <p id="head-name">Name:<input type="text"></p>
-        <p id="head-class">Class:<input type="text"></p>
-        <p id="head-race">Race:<input type="text"></p>
-    </div>
-    <div id="ability-container" class="grid-item">
+    <div id="ability-container" class="container">
         <div class="stat-box" id="strength">
             <form>
-                <p>Strength</p>
+                <p class="ability-type">STR</p>
                 <input class="num-box" id="str" type="text" >
             </form>
             <div id="mod">
                 <form>
-                    <p class="mod-word">Modifier</p>
+                    <p class="mod-word">Mod</p>
                     <input class="mod-box" id="str-mod" type="text">
                 </form>
             </div>
         </div>
         <div class="stat-box" id="dexterity">
             <form>
-                <p>Dexterity</p>
+                <p class="ability-type">DEX</p>
                 <input class="num-box" id="dex" type="text">
             </form>
             <div id="mod">
                 <form>
-                    <p class="mod-word">Modifier</p>
+                    <p class="mod-word">Mod</p>
                     <input class="mod-box" id="dex-mod" type="text">
                 </form>
             </div>
         </div>
         <div class="stat-box" id="constitution">
             <form>
-                <p>Constitution</p>
+                <p class="ability-type">CON</p>
                 <input class="num-box" id="con" type="text">
             </form>
             <div id="mod">
                 <form>
-                    <p class="mod-word">Modifier</p>
+                    <p class="mod-word">Mod</p>
                     <input class="mod-box" id="con-mod" type="text">
                 </form>
             </div>
         </div>
         <div class="stat-box" id="intelligence">
             <form>
-                <p>Intelligence</p>
+                <p class="ability-type">INT</p>
                 <input class="num-box" id="int" type="text">
             </form>
             <div id="mod">
                 <form>
-                    <p class="mod-word">Modifier</p>
+                    <p class="mod-word">Mod</p>
                     <input class="mod-box" id="int-mod" type="text">
                 </form>
             </div>
         </div>
         <div class="stat-box" id="wisdom">
             <form>
-                <p>Wisdom</p>
+                <p class="ability-type">WIS</p>
                 <input class="num-box" id="wis" type="text">
             </form>
             <div id="mod">
                 <form>
-                    <p class="mod-word">Modifier</p>
+                    <p class="mod-word">Mod</p>
                     <input class="mod-box" id="wis-mod" type="text">
                 </form>
             </div>
         </div>
         <div class="stat-box" id="charisma">
             <form>
-                <p>Charisma</p>
+                <p class="ability-type">CHA</p>
                 <input class="num-box" id="cha" type="text">
             </form>
             <div id="mod">
                 <form>
-                    <p class="mod-word">Modifier</p>
+                    <p class="mod-word">Mod</p>
                     <input class="mod-box" id="cha-mod" type="text">
                 </form>
             </div>
         </div>
+    </div>
+    <div class="btn-container">
         <div class="button" id="button">
             Random  
         </div>
-        <div class="button" id="button2">Mod</div>
+        <div class="button" id="button2">
+            Mod
+        </div>
     </div>
-</div>
+
     <script type="text/javascript" src="script.js"></script>
     <script type="text/javascript" src="function.js"></script>
 </body>
