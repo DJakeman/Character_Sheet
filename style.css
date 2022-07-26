@@ -7,13 +7,43 @@ body {
     background-attachment: fixed;
 }
 
-.container {
+h2 {
+    text-align: center;
+    margin-top: 3rem;
+    height: 0.5rem;
+}
+
+#ability-container {
     padding: 1rem;
     display: flex;
     flex-flow: row wrap;
     gap: 0.5rem;
     flex-basis: 2rem;
     justify-content: center;
+}
+
+.header-input {
+    background-color: #dbe3cc7b;
+    border-radius: 1rem;
+    height: 0.5rem;
+}
+
+.header {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem;
+    padding: 1rem;
+    margin: 1rem;
+    justify-content: center;
+}
+
+.ability-flex {
+    display: flex;
+    flex-flow: column wrap; 
+    justify-content: left;
+    border: 1px solid;
+    width: 24rem;
+    margin: 0.5rem;
 }
 
 .stat-box {
