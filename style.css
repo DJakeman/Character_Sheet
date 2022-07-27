@@ -91,9 +91,10 @@ h2 {
 .main {
     border: 1px solid;
     height: auto;
-    width: 100rem;
+    width: auto;
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
 }
 
 /*Container-1 Section*/
@@ -105,12 +106,15 @@ h2 {
     width: 26rem;
     height: auto;
     border: 1px solid;
-    margin: 1rem 1rem 1rem 8rem;
+    margin: 1rem;
 }
 
-@media screen and (max-width: 767px) {
-    .container-1 {margin-left: 1rem};
+@media screen and (min-width: 412px) and (max-width: 915px) {
+    .container-1 {
+        margin-left: 1rem;
+    }; 
 }
+
 
 /*Ability Score Section*/
 .ability-flex {
@@ -258,6 +262,13 @@ h2 {
     text-align: center;
     border-radius: .5rem;
     margin: .2rem;
+}
+
+.container-3 {
+    border: 1px solid;
+    width: 26rem;
+    height: auto;
+    margin: 1rem;
 }
 
 /*Button Style*/
