@@ -20,18 +20,11 @@ h2 {
     justify-content: center;
 }
 
-/*Main Div*/ 
-.main {
-    border: 1px solid;
-    height: auto;
-    width: 100rem;
-    display: flex;
-    flex-flow: row wrap;
-}
 
 /*Header*/
 .header-container {
     border: 1px solid;
+    margin-bottom: 1rem;
 }
 
 .header {
@@ -39,7 +32,7 @@ h2 {
     padding-bottom: 1rem;
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 767px) {
     .header {min-height: 5rem};
 }
 
@@ -94,6 +87,15 @@ h2 {
     margin-left: 0.6rem;
 }
 
+/*Main Div*/ 
+.main {
+    border: 1px solid;
+    height: auto;
+    width: 100rem;
+    display: flex;
+    flex-flow: row wrap;
+}
+
 /*Container-1 Section*/
 
 .container-1 {
@@ -103,6 +105,11 @@ h2 {
     width: 26rem;
     height: auto;
     border: 1px solid;
+    margin: 1rem 1rem 1rem 8rem;
+}
+
+@media screen and (max-width: 767px) {
+    .container-1 {margin-left: 1rem};
 }
 
 /*Ability Score Section*/
@@ -200,6 +207,7 @@ h2 {
 .container-2 {
     border: 1px solid;
     width: 26rem;
+    margin: 1rem;
 }
 
 /*armor nest*/
