@@ -9,6 +9,8 @@ body {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    overflow-x: hidden;
+    width: auto;
 }
 
 h2 {
@@ -47,10 +49,10 @@ h2 {
     flex-direction: row;
     gap: 1rem;
     padding: 1rem;
-    margin: 1rem;
     justify-content: center;
     border: 1px solid;
     width: 25rem;
+    margin: 1rem;
 }
 
 .text-input {
@@ -109,11 +111,11 @@ h2 {
     margin: 1rem;
 }
 
-@media screen and (min-width: 412px) and (max-width: 915px) {
+/*@media screen and (min-width: 412px) and (max-width: 915px) {
     .container-1 {
         margin-left: 1rem;
     }; 
-}
+}*/
 
 
 /*Ability Score Section*/
@@ -221,6 +223,7 @@ h2 {
     flex-flow: row wrap;
     border: 1px solid;
     height: 100%;
+    margin: 0.5rem;
 }
 
 .armor-class, .initiative, .speed, .max-health, .current-hp, .temp-hp {
@@ -239,22 +242,26 @@ h2 {
     flex-flow: row wrap;
     border: 1px solid;
     height: 100%;
+    margin: 0rem 0.5rem;
 }
 
 /*Skills Nest*/
 .skills-container {
     border: 1px solid;
+    margin: 0.5rem;
+    justify-content: center;
 }
 
 .skills-container-nest {
     border: 1px solid;
-    padding: 1rem 3rem;
+    margin: 1rem;
 }
 
 .skills {
     border: 1px solid;
     text-align: left;
-    width: 20rem;
+    width: auto;
+    margin: 0.5rem;
 }
 
 .skill-box {
