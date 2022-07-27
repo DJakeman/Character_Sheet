@@ -62,7 +62,7 @@ h2 {
 /*header-nest*/
 
 #input-name {
-    margin-left: 0.2rem;
+    margin-left: 0.22rem;
 }
 
 #input-race {
@@ -74,11 +74,11 @@ h2 {
 }
 
 #input-level {
-    margin-left: 0.35rem;
+    margin-left: 0.33rem;
 }
 
 #input-background {
-    margin-left: 0.2rem;
+    margin-left: 0.15rem;
 }
 
 #input-alignment {
@@ -86,7 +86,7 @@ h2 {
 }
 
 #input-experience {
-    margin-left: 0.6rem;
+    margin-left: 0.55rem;
 }
 
 /*Main Div*/ 
@@ -111,11 +111,73 @@ h2 {
     margin: 1rem;
 }
 
-/*@media screen and (min-width: 412px) and (max-width: 915px) {
-    .container-1 {
-        margin-left: 1rem;
-    }; 
-}*/
+
+
+@media screen and (max-width: 727px) {
+    #input-race {
+        margin-left: 0.4rem;
+    };   
+}
+
+@media screen and (max-width: 850px) {
+    #input-race {
+        margin-left: 0.75rem;
+    };   
+}
+
+@media screen and (max-width: 727px) {
+    #input-class {
+        margin-left: 0.6rem;
+    };   
+}
+
+@media screen and (max-width: 850px) {
+    #input-class {
+        margin-left: 0.6rem;
+    };   
+}
+
+@media screen and (max-width: 850px) {
+    #input-level {
+        margin-left: 0.4rem;
+    };   
+}
+
+@media screen and (max-width: 727px) {
+    #input-level {
+        margin-left: 0.4rem;
+    };   
+}
+
+@media screen and (max-width: 850px) {
+    #input-alignment {
+        margin-left: 0.95rem;
+    };   
+}
+
+@media screen and (max-width: 727px) {
+    #input-alignment {
+        margin-left: 0.95rem;
+    };   
+}
+
+@media screen and (max-width: 850px) {
+    #input-experience {
+        margin-left: 0.6rem;
+    };   
+}
+
+@media screen and (max-width: 727px) {
+    #input-background {
+        margin-left: 0.2rem;
+    };   
+}
+
+@media screen and (max-width: 850px) {
+    #input-background {
+        margin-left: 0.18rem;
+    };   
+}
 
 
 /*Ability Score Section*/
