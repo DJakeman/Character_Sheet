@@ -59,6 +59,38 @@ const modifier = (ability, mod) => {
     }
 };
 
+//Race if/else
+const raceAbility = () =>{
+    if (pRace.value === 'Human' || pRace.value === 'human') {
+        strength.value++,
+        dexterity.value++,
+        constitution.value++,
+        intelligence.value++,
+        wisdom.value++,
+        charisma.value++;
+    } else if (pRace.value === "Dwarf" || pRace.value === 'dwarf') {
+        constitution.value++,
+        constitution.value++;
+    } else if (pRace.value === 'elf' || pRace.value === 'Elf') {
+        dexterity.value++,
+        dexterity.value++;
+    } else if (pRace.value === 'halfling' || pRace.value === 'Halfling') {
+        dexterity.value++,
+        dexterity.value++;
+    } else if (pRace.value === 'dragonborn' || pRace.value === 'Dragonborn') {
+        strength.value++,
+        strength.value++,
+        charisma.value++;
+    } else if (pRace.value === 'gnome' || pRace.value === 'Gnome') {
+        intelligence.value++,
+        intelligence.value++;
+    } else if (pRace.value === 'tiefling' || pRace.value === 'Tiefling') {
+        intelligence.value++,
+        charisma.value++,
+        charisma.value++;
+    };
+};
+
 // when clicking the randombutton it sends calls the randomAvg() function and uses the .value to send it to the proper text box in html.
 randomBtn.onclick = () => {
     strength.value = randomAvg();
@@ -76,6 +108,10 @@ randomBtn.onclick = () => {
     modifier(intelligence.value, modInt);
     modifier(wisdom.value, modWis);
     modifier(charisma.value, modCha);
+
+    console.log(strength.value, dexterity.value, constitution.value, intelligence.value, wisdom.value, charisma.value);
+    raceAbility();
+    console.log(strength.value, dexterity.value, constitution.value, intelligence.value, wisdom.value, charisma.value);
 };
 
 // Allows user to calculate their modifier from manually typed ability scores.

@@ -202,12 +202,16 @@ h2 {
     margin-left: 0.6rem;
 }
 
+#input-subrace {
+    margin-left: 1.05rem;
+}
+
 #input-class {
     margin-left: 0.44rem;
 }
 
 #input-level {
-    margin-left: 0.33rem;
+    margin-left: 2.8rem;
 }
 
 #input-background {
@@ -219,29 +223,7 @@ h2 {
 }
 
 #input-experience {
-    margin-left: 0.55rem;
-}
-
-/*Main Div*/ 
-.main {
-    border: 1px solid;
-    height: auto;
-    width: auto;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-}
-
-/*Container-1 Section*/
-
-.container-1 {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid;
-    width: 26rem;
-    height: auto;
-    border: 1px solid;
-    margin: 1rem;
+    margin-left: 0.57rem;
 }
 
 @media screen and (max-width: 727px) {
@@ -270,13 +252,17 @@ h2 {
     #input-race {
         margin-left: 0.75rem;
     }
+
+    #input-subrace {
+        margin-left: 1.2rem;
+    }
     
     #input-class {
         margin-left: 0.6rem;
     }
 
     #input-level {
-        margin-left: 0.4rem;
+        margin-left: 3.35rem;
     }
 
     #input-alignment {
@@ -291,6 +277,29 @@ h2 {
         margin-left: 0.18rem;
     }
 }
+
+/*Main Div*/ 
+.main {
+    border: 1px solid;
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+/*Container-1 Section*/
+
+.container-1 {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+    width: 26rem;
+    height: auto;
+    border: 1px solid;
+    margin: 1rem;
+}
+
 
 /*Ability Score Section*/
 .ability-flex {
@@ -483,4 +492,7 @@ h2 {
     color: black;
     cursor: pointer;
 }
-
+/*Input Text*/
+input[type=text] {
+    text-transform: capitalize;
+}
