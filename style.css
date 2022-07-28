@@ -20,6 +20,10 @@ body {
     overflow-x: hidden;
     width: auto;
 }
+/*Pre Loads the images*/
+div#preload {
+    display: none;
+}
 
 h2 {
     text-align: center;
