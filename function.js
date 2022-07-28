@@ -87,3 +87,11 @@ modBtn.onclick = () => {
     modifier(wisdom.value, modWis);
     modifier(charisma.value, modCha);
 };
+
+//Navbar functions
+toggleButton.addEventListener('click', () => {
+    navbarLinks.classList.toggle('active')
+});
+
+//Lets the navigation move to the linked names and the main nav bar does not cover the names
+document.documentElement.style.setProperty('--scroll-padding', navHeight + 1 + 'px');

@@ -19,3 +19,11 @@ const modInt = document.getElementById('int-mod');
 const modWis = document.getElementById('wis-mod');
 const modCha = document.getElementById('cha-mod');
 const modBtn = document.getElementById('button2');
+
+//Navbar Java
+const toggleButton = document.getElementsByClassName('toggle-button')[0];
+const navbarLinks = document.getElementsByClassName('link-container')[0];
+const navHeight = document.querySelector('.navbar').offsetHeight;
+
+
+

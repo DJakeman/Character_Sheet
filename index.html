@@ -9,7 +9,26 @@
     <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="header-container">
+    <nav class="navbar">
+        <div class="brand-title"><a href="#top">CS</a></div>
+        <div>
+        <a class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        </div>
+        <div class="link-container">
+            <ul>
+                <li><a href="#ability">Ability</a></li>
+                <li><a href="#proficiency">Proficiency</a></li>
+                <li><a href="#armor">Armor</a></li>
+                <li><a href="#hp">HP</a></li>
+                <li><a href="#skills">Skills</a></li>
+            </ul>
+        </div>
+</nav>
+    <div id="top" class="header-container">
         <div class="header">
             <h2>Character Sheet</h2>
         </div>
@@ -44,7 +63,9 @@
 <div class="main">
 <div class="container-1">
     <div class="ability-flex">
-        <h2>Ability Scores</h2>
+        <div class="header-ability">
+            <h2 id="ability">Ability Scores</h2>
+        </div>
         <div class="ability-container">
             <div class="stat-box" id="strength">
                 <form>
@@ -130,7 +151,7 @@
     </div>
     <div class="saving-throws-container">
             <div class="proficiency">
-                <h2>Proficiency</h2>
+                <h2 id="proficiency">Proficiency</h2>
                 <input class="num-box" type="text">
             </div>               
     
@@ -173,7 +194,7 @@
 </div>
 <div class="container-2">   
     <div class="armor-container">
-        <h2>Armor</h2>
+        <h2 id="armor">Armor</h2>
         <div class="armor-nest">
             <div class="armor-class">
                 <input id="armor-class" class="num-box" type="text"><p>Armor Class</p>
@@ -188,7 +209,7 @@
             </div>
         </div>
         <div class="health-container">
-            <h2>Hit Points</h2>
+            <h2 id="hp">Hit Points</h2>
             <div class="health-nest">
                 <div class="max-health">
                     <input class="num-box" type="text"> <p>Max-Health</p>
@@ -205,7 +226,7 @@
         </div>
     </div>
     <div class="skills-container">
-        <h2>Skills</h2>
+        <h2 id="skills">Skills</h2>
         <div class="skills-container-nest">
         <div class="skills">
         <input type="checkbox"> <input class="skill-box" type="text"> Acrobatics (Dex)
@@ -265,10 +286,10 @@
     </div>
 </div>
 <div class="container-3">
-    
+
 </div>
 </div>
-    <script type="text/javascript" src="script.js"></script>
-    <script type="text/javascript" src="function.js"></script>
+    <script type="text/javascript" src="script.js" defer></script>
+    <script type="text/javascript" src="function.js" defer></script>
 </body>
 </html>
