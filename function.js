@@ -131,3 +131,4 @@ toggleButton.addEventListener('click', () => {
 
 //Lets the navigation move to the linked names and the main nav bar does not cover the names
 document.documentElement.style.setProperty('--scroll-padding', navHeight + 1 + 'px');
+//changes
