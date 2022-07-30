@@ -20,9 +20,31 @@ body {
     overflow-x: hidden;
     width: auto;
 }
-/*Pre Loads the images*/
-div#preload {
-    display: none;
+
+/*Groups*/
+.armor-class, .initiative, .speed, .max-health, .current-hp, .temp-hp {
+    border: 1px solid;
+    width: 4rem;
+    padding: 1rem;
+    margin: 1rem;
+    height: 7rem;
+    text-align: center;
+    border-radius: 0.5rem 0.5rem 3rem 3rem;
+    
+}
+
+.stat-box, .throw, .armor-class, .initiative, .speed,.max-health, .current-hp, .temp-hp, .skills, .header-labels {
+    background-color: rgba(143, 153, 51, 0.719);
+}
+
+.header-container, .main, .container-1, .container-2, .container-3, .ability-flex, .saving-throws-container, .armor-nest, .health-nest, .skills-container {
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+.ability-flex, .saving-throws-container, .armor-nest, .health-nest, .skills-container, .header-container {
+    background-color: rgba(153, 148, 127, 0.671);
+    
 }
 
 h2 {
@@ -32,6 +54,11 @@ h2 {
     font-family: 'MedievalSharp', cursive, 'Times New Roman';
     font-size: 2rem;
     justify-content: center;
+}
+
+p {
+    font-family: 'MedievalSharp', cursive, 'Times New Roman';
+    font-size: 1.1rem;
 }
 
 /*Nav-Bar*/
@@ -51,6 +78,7 @@ h2 {
 .brand-title {
     font-size: 1.5rem;
     margin: .5rem;
+    font-family: 'MedievalSharp', cursive, 'Times New Roman';
 }
 
 .brand-title a {
@@ -150,10 +178,10 @@ h2 {
 
 /*Header*/
 .header-container {
-    border: 1px solid;
     margin-bottom: 1rem;
-    margin-top: 2rem;
-    width: 50rem;
+    margin-top: 3.5rem;
+    width: 45rem;
+    justify-content: center;
 }
 
 .header {
@@ -182,8 +210,8 @@ h2 {
     border: 1px solid;
     border-radius: 10px;
     width: 25rem;
-    margin-left: 11rem;
     margin-bottom: 1rem;
+    margin-left: 9rem;
 }
 
 .text-input {
@@ -197,19 +225,19 @@ h2 {
 }
 
 #input-race {
-    margin-left: 0.6rem;
+    margin-left: 0.65rem;
 }
 
 #input-subrace {
-    margin-left: 1.05rem;
+    margin-left: 1.11rem;
 }
 
 #input-class {
-    margin-left: 0.44rem;
+    margin-left: 0.4rem;
 }
 
 #input-level {
-    margin-left: 2.8rem;
+    margin-left: 3.68rem;
 }
 
 #input-background {
@@ -217,11 +245,11 @@ h2 {
 }
 
 #input-alignment {
-    margin-left: 0.8rem;
+    margin-left: 1.1rem;
 }
 
 #input-experience {
-    margin-left: 0.57rem;
+    margin-left: .785rem;
 }
 
 @media screen and (max-width: 727px) {
@@ -248,27 +276,27 @@ h2 {
 
 @media screen and (max-width: 850px) {
     #input-race {
-        margin-left: 0.75rem;
+        margin-left: 0.65rem;
     }
 
     #input-subrace {
-        margin-left: 1.2rem;
+        margin-left: 1.1rem;
     }
     
     #input-class {
-        margin-left: 0.6rem;
+        margin-left: 0.4rem;
     }
 
     #input-level {
-        margin-left: 3.35rem;
+        margin-left: 3.75rem;
     }
 
     #input-alignment {
-        margin-left: 0.95rem;
+        margin-left: 1.14rem;
     }
 
     #input-experience {
-        margin-left: 0.6rem;
+        margin-left: 0.86rem;
     }
 
     #input-background {
@@ -278,7 +306,6 @@ h2 {
 
 /*Main Div*/ 
 .main {
-    border: 1px solid;
     height: auto;
     width: auto;
     display: flex;
@@ -291,10 +318,8 @@ h2 {
 .container-1 {
     display: flex;
     flex-direction: column;
-    border: 1px solid;
     width: 26rem;
     height: auto;
-    border: 1px solid;
     margin: 1rem;
 }
 
@@ -304,7 +329,6 @@ h2 {
     display: flex;
     flex-flow: column wrap; 
     justify-content: top;
-    border: 1px solid;
     width: 24rem;
     margin: 1rem;
     justify-content: center;
@@ -358,7 +382,6 @@ h2 {
     display: flex;
     flex-flow: column wrap; 
     justify-content: top;
-    border: 1px solid;
     height: 100%;
     width: 24rem;
     margin: 0.5rem 1rem;
@@ -390,7 +413,6 @@ h2 {
 
 /*Container-2*/
 .container-2 {
-    border: 1px solid;
     width: 26rem;
     margin: 1rem;
 }
@@ -404,45 +426,26 @@ h2 {
 .armor-nest {
     display: flex;
     flex-flow: row wrap;
-    border: 1px solid;
     height: 100%;
     margin: 0.5rem;
     justify-content: top;
-}
-
-.armor-class, .initiative, .speed, .max-health, .current-hp, .temp-hp {
-    border: 1px solid;
-    width: 4rem;
-    padding: 1rem;
-    margin: 1rem;
-    height: 7rem;
-    text-align: center;
-    border-radius: 0.5rem 0.5rem 3rem 3rem;
-    
-}
-
-.stat-box, .throw, .armor-class, .initiative, .speed,.max-health, .current-hp, .temp-hp, .skills, .header-labels {
-    background-color: rgba(143, 153, 51, 0.719);
 }
 
 
 .health-nest {
     display: flex;
     flex-flow: row wrap;
-    border: 1px solid;
     height: 100%;
     margin: 0rem 0.5rem;
 }
 
 /*Skills Nest*/
 .skills-container {
-    border: 1px solid;
     margin: 0.5rem;
     justify-content: center;
 }
 
 .skills-container-nest {
-    border: 1px solid;
     margin: 1rem;
 }
 
@@ -451,6 +454,9 @@ h2 {
     text-align: left;
     width: auto;
     margin: 0.5rem;
+    font-family: 'MedievalSharp', cursive, 'Times New Roman';
+    font-size: 1.2rem;
+
 }
 
 .skill-box {
@@ -461,7 +467,6 @@ h2 {
 }
 
 .container-3 {
-    border: 1px solid;
     width: 26rem;
     height: auto;
     margin: 1rem;
@@ -497,3 +502,4 @@ h2 {
 input[type=text] {
     text-transform: capitalize;
 }
+
