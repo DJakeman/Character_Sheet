@@ -4,13 +4,13 @@ html {
 }
 
 body {
-    background-color: rgb(0, 0, 0);
-    background-image: url(./img/parchment1.jpg);
+    background-color: rgb(196, 247, 181);
+    /*background-image: url(./img/parchment1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
     overflow: -moz-scrollbars-vertical;
-    overflow-y: scroll;
+    overflow-y: scroll; */
     margin: 0;
     padding: 0;
     display: flex;
@@ -39,7 +39,7 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-color: rgb(36, 90, 60);
     color: white;
     height: auto;
     width: 100%;
@@ -60,7 +60,6 @@ h2 {
 }
 
 .brand-title a:hover {
-    background-color: #555;
     color: yellow;
 }
 
@@ -84,7 +83,6 @@ h2 {
 }
 
 .link-container li a:hover {
-    background-color: #555;
     color: yellow;
 }
 
@@ -171,7 +169,6 @@ h2 {
 }
 
 .header-input {
-    background-color: #dbe3cc7b;
     border-radius: 1rem;
     height: 0.7rem;
 }
@@ -183,6 +180,7 @@ h2 {
     padding: 1rem;
     justify-content: center;
     border: 1px solid;
+    border-radius: 10px;
     width: 25rem;
     margin-left: 11rem;
     margin-bottom: 1rem;
@@ -322,7 +320,6 @@ h2 {
 }
 
 .stat-box {
-    background-color: #BDDA83;
     padding: 0rem 2rem;
     height: 1rem;
     width: 2rem;
@@ -374,7 +371,6 @@ h2 {
 }
 
 .throw {
-    background-color: #BDDA83;
     padding: 0rem 0.8rem;
     height: 1rem;
     width: 0.5rem;
@@ -422,8 +418,13 @@ h2 {
     height: 7rem;
     text-align: center;
     border-radius: 0.5rem 0.5rem 3rem 3rem;
-    background-color: #BDDA83;
+    
 }
+
+.stat-box, .throw, .armor-class, .initiative, .speed,.max-health, .current-hp, .temp-hp, .skills, .header-labels {
+    background-color: rgba(143, 153, 51, 0.719);
+}
+
 
 .health-nest {
     display: flex;
